@@ -1,12 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, TextInput, Button, Alert } from 'react-native';
+import { NavBar } from './src/NavBar';
+import { PizzaTranslator } from './src/dfdf';
 
 export default function App() {
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <NavBar title='Todo app' />
+      <View style={styles.src}>
+        <PizzaTranslator />
+      </View>
     </View>
   );
 }
@@ -14,8 +19,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#FFDEAD'
   },
+  src: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
 });
