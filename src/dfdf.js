@@ -44,8 +44,8 @@ export const PizzaTranslator = () => {
               }
               else{
                 let z;
-                z = a%b
-                alert("Остаток: "+ z)
+                z = a%b;
+                alert("Остаток: "+ z);
               }
             }}
             />

@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <NavBar title='Todo app' />
+      <NavBar title='Деление чисел' />
       <View style={styles.src}>
         <PizzaTranslator />
       </View>
