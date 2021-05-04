@@ -39,13 +39,23 @@ export const PizzaTranslator = () => {
       <Button 
             title="Расчет" 
             onPress={() => { 
-              if(a%b==0){
+              if(a%b==0 || b%a==0){
                 alert("Эти числа делются");
               }
-              else{
+              else if (a%b!=0 && b%a!=0){
+                if (a>b) {
+                  let z;
+                  z = a%b;
+                  alert("Остаток: "+ z);
+                }
+                else {
                 let z;
-                z = a%b;
+                z = b%a;
                 alert("Остаток: "+ z);
+                }
+              }
+              else{
+                alert("Заполните все поля правильно");
               }
             }}
             />

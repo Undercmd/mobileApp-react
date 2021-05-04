@@ -10,6 +10,7 @@ export default function App() {
     <View style={styles.container}>
       <NavBar title='Деление чисел' />
       <View style={styles.src}>
+        <Text>Пустые поля по умолчанию = 0</Text>
         <PizzaTranslator />
       </View>
     </View>
